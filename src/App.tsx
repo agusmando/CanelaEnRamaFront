@@ -8,14 +8,6 @@ import Dashboard from "./Dashboard";
 import { PreBuiltUIList, SuperTokensConfig, ComponentWrapper } from "./config";
 import Home from "./Home";
 
-import Session from "supertokens-auth-react/recipe/session";
-
-async function getJWT() {
-  if (await Session.doesSessionExist()) {
-    let userId = await Session.getUserId();
-    let jwt = await Session.getAccessToken();
-  }
-}
 // Initialize SuperTokens - ideally in the global scope
 SuperTokens.init(SuperTokensConfig);
 
