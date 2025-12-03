@@ -1,11 +1,6 @@
 import EmailPassword from "supertokens-auth-react/recipe/emailpassword";
 import { EmailPasswordPreBuiltUI } from "supertokens-auth-react/recipe/emailpassword/prebuiltui";
-import ThirdParty, {
-  Google,
-  Github,
-  Apple,
-  Twitter,
-} from "supertokens-auth-react/recipe/thirdparty";
+import ThirdParty, { Google } from "supertokens-auth-react/recipe/thirdparty";
 import { ThirdPartyPreBuiltUI } from "supertokens-auth-react/recipe/thirdparty/prebuiltui";
 import Session from "supertokens-auth-react/recipe/session";
 
@@ -21,16 +16,12 @@ export function getWebsiteDomain() {
   return websiteUrl;
 }
 
-import React from "react";
-
-// import SuperTokens, { SuperTokensWrapper } from "supertokens-auth-react";
-
 export const SuperTokensConfig = {
   appInfo: {
     // learn more about this on https://supertokens.com/docs/references/frontend-sdks/reference#sdk-configuration
-    appName: "CanelaEnRama",
+    appName: "Canela en Rama",
     apiDomain: "http://localhost:8080",
-    websiteDomain: "localhost:3000",
+    websiteDomain: "http://localhost:3000",
     apiBasePath: "/api/auth",
     websiteBasePath: "/auth",
   },
